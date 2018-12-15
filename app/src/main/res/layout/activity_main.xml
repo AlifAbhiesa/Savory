@@ -25,6 +25,7 @@
         android:fontFamily="serif"
         android:textColor="@android:color/white"
         android:theme="@style/buttonstyle1"
+        android:onClick="LoginPage"
         />
     <Button
         android:layout_width="200dp"

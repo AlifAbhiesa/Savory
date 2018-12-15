@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.thesavorycake.thesavory.RegisterActivity">
+    tools:context="com.thesavorycake.thesavory.RegisterActivity"
+    >
 
     <ImageView
         android:layout_width="160dp"
@@ -160,6 +161,7 @@
         android:id="@+id/btnregist"
         android:layout_width="160dp"
         android:layout_height="80dp"
+        android:onClick="register"
         android:layout_marginTop="490dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/btnregist2"/>

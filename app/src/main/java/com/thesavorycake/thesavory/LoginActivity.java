@@ -1,6 +1,7 @@
 package com.thesavorycake.thesavory;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -62,6 +63,8 @@ public class LoginActivity extends AppCompatActivity {
                     if (value.equals("1")) {
                         Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                         finish();
+                        Intent intent = new Intent(LoginActivity.this, MainMenu.class);
+                        startActivity(intent);
                     } else {
                         Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                     }

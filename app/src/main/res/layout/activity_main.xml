@@ -7,6 +7,8 @@
     android:background="@android:color/black"
     tools:context="com.thesavorycake.thesavory.MainActivity">
 
+
+
     <ImageView
         android:layout_width="500dp"
         android:layout_height="180dp"
@@ -48,5 +50,10 @@
         android:textSize="12dp"
         android:fontFamily="serif"/>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </RelativeLayout>

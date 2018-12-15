@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void LoginUser(View view) {
         final ProgressDialog progress;
+        final int status;
 
         String email = txtEmail.getText().toString();
         String password = txtPassword.getText().toString();
@@ -59,22 +60,32 @@ public class LoginActivity extends AppCompatActivity {
                     String value = response.body().getValue();
                     String message = response.body().getMessage();
                     progress.dismiss();
-                    if (value.equals("1")) {
+                    if (value.equals("200")) {
                         Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
-                        finish();
-                        Intent intent = new Intent(LoginActivity.this, Produk.class);
-                        startActivity(intent);
+                        LoginSuccess();
                     } else {
                         Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
+
                     }
                 }
-
                 @Override
                 public void onFailure(Call<Value> call, Throwable t) {
                     progress.dismiss();
                     Toast.makeText(LoginActivity.this, t.toString(), Toast.LENGTH_SHORT).show();
                 }
             });
+
+
         }
+
+
+    }
+
+    private void LoginSuccess(){
+
+        finish();
+        Intent intent = new Intent(LoginActivity.this, Produk.class);
+        startActivity(intent);
+       // Toast.makeText(LoginActivity.this, "Pushed", Toast.LENGTH_SHORT).show();
     }
 }

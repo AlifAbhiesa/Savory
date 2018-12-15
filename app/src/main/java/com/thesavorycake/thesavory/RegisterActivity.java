@@ -56,8 +56,8 @@ public class RegisterActivity extends AppCompatActivity {
       String nohp = txtNoHp.getText().toString();
       String password = txtPassword.getText().toString();
 
-      if(nik == "" || nama == "" || alamat == "" ||
-              email == "" || nohp == "" || password == ""){
+      if(nik.isEmpty() || nama.isEmpty() || alamat.isEmpty() ||
+              email.isEmpty() || nohp.isEmpty() || password.isEmpty()){
           Toast.makeText(RegisterActivity.this, "Anda harus mengisi semua field !", Toast.LENGTH_LONG).show();
       }else{
           progress  = new ProgressDialog(this);
@@ -77,14 +77,12 @@ public class RegisterActivity extends AppCompatActivity {
                   String value = response.body().getValue();
                   String message = response.body().getMessage();
                   progress.dismiss();
-                  if (value.equals("1")) {
+                  if (value.equals("200")) {
                       Toast.makeText(RegisterActivity.this, message, Toast.LENGTH_SHORT).show();
-                      finish();
                   } else {
                       Toast.makeText(RegisterActivity.this, message, Toast.LENGTH_SHORT).show();
                   }
               }
-
               @Override
               public void onFailure(Call<Value> call, Throwable t) {
                   progress.dismiss();

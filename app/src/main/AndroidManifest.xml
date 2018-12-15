@@ -20,7 +20,11 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
+
         <activity android:name=".MainmenuActivity"></activity>
+
+        <activity android:name=".Produk"></activity>
+
     </application>
 
 </manifest>

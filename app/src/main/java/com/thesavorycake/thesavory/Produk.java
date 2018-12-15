@@ -20,9 +20,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Products extends AppCompatActivity {
+public class Produk extends AppCompatActivity {
 
-   private static final String productURL = "http://192.168.100.19/android/Products";
+    private static final String productURL = "http://192.168.100.19/android/Products";
 
     List<Product> productList;
     RecyclerView recyclerView;
@@ -30,7 +30,7 @@ public class Products extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_recycler_view);
         recyclerView = findViewById(R.id.recylcerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -54,7 +54,7 @@ public class Products extends AppCompatActivity {
                                 ));
                             }
 
-                            ProductsAdapter adapter = new ProductsAdapter(Products.this, productList);
+                            ProductsAdapter adapter = new ProductsAdapter(Produk.this, productList);
                             recyclerView.setAdapter(adapter);
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -68,5 +68,6 @@ public class Products extends AppCompatActivity {
                     }
                 });
         Volley.newRequestQueue(this).add(stringRequest);
+
     }
 }

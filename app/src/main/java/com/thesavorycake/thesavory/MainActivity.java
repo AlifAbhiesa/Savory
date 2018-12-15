@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+
 import butterknife.BindView;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void LoginPage(View view) {
-        Intent intent = new Intent(MainActivity.this, Products.class);
+        Intent intent = new Intent(MainActivity.this, Produk.class);
         startActivity(intent);
     }
 }

@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.thesavorycake.thesavory.Api.LoginAPI;
-import com.thesavorycake.thesavory.Api.RegisterAPI;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -63,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (value.equals("1")) {
                         Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();
                         finish();
-                        Intent intent = new Intent(LoginActivity.this, MainMenu.class);
+                        Intent intent = new Intent(LoginActivity.this, Products.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(LoginActivity.this, message, Toast.LENGTH_SHORT).show();

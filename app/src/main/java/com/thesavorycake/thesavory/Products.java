@@ -20,7 +20,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainMenu extends AppCompatActivity {
+public class Products extends AppCompatActivity {
 
    private static final String productURL = "http://192.168.100.19/android/Products";
 
@@ -54,7 +54,7 @@ public class MainMenu extends AppCompatActivity {
                                 ));
                             }
 
-                            ProductsAdapter adapter = new ProductsAdapter(MainMenu.this, productList);
+                            ProductsAdapter adapter = new ProductsAdapter(Products.this, productList);
                             recyclerView.setAdapter(adapter);
                         } catch (JSONException e) {
                             e.printStackTrace();

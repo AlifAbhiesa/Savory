@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/chocolatecake"
-    tools:context="com.thesavorycake.thesavory.MainmenuActivity">
+    tools:context="com.thesavorycake.thesavory.MainmenuActivity"
+    >
+
+
 
     <ImageView
         android:layout_width="200dp"
@@ -14,12 +17,6 @@
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
 
-    <Button
-        android:id="@+id/btnmenu"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/menuicon"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"/>
+<include layout="@layout/header" />
 
 </RelativeLayout>

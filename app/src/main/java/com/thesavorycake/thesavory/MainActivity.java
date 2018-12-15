@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void LoginPage(View view) {
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        Intent intent = new Intent(MainActivity.this, MainMenu.class);
         startActivity(intent);
     }
 }

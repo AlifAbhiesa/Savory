@@ -26,8 +26,8 @@
 
         <ImageView
             android:id="@+id/images"
-            android:layout_width="150dp"
-            android:layout_height="115dp"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
             android:src="@drawable/cake1"
              />
     </RelativeLayout>

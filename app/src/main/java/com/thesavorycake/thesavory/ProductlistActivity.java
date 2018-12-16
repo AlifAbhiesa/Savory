@@ -29,7 +29,7 @@ public class ProductlistActivity extends AppCompatActivity {
 GridView gridView;
     String[] caketNames = {"Crusty Fruits","Matcha Blueberry","Red Velvet","NYC Cheesecake","Classic Chocochip","Cinnamon Rolls","Sweet Confetti","Raisin Bread","Tutti Fruity Macaron","Nuttela Meringue"};
     int[] cakeImages = {R.drawable.cake1,R.drawable.cake2,R.drawable.cake6,R.drawable.cake7,R.drawable.cake3,R.drawable.cake4,R.drawable.cake8,R.drawable.cake9,R.drawable.cake11,R.drawable.cake13};
-    String[] caketHarga = {"310.000","350.000","330.000","290.000","20.000","27.000","11.000","25.000","11.000","10.000"};
+    String[] caketHarga = {"310.000","350.000","330.000","290.000","20.000","27.000","11.000","25.000","11.000","10.000","10.000"};
 
     private ProductlistActivityAdapter adapter;
     private GridView mGridView;
@@ -102,7 +102,7 @@ GridView gridView;
 
             name.setText(caketNames[i]);
             image.setImageResource(cakeImages[i]);
-            harga.setText(caketHarga[i]);
+//            harga.setText(caketHarga[i]);
             return view1;
 
         }

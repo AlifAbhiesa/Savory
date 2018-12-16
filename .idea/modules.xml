@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Savory.iml" filepath="$PROJECT_DIR$/Savory.iml" />
+      <module fileurl="file://D:\nada\File Nada\Semester 3\Basis Data\TheSavory\Savory.iml" filepath="D:\nada\File Nada\Semester 3\Basis Data\TheSavory\Savory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheSavory.iml" filepath="$PROJECT_DIR$/TheSavory.iml" />
       <module fileurl="file://H:\Android\Savory\TheSavory.iml" filepath="H:\Android\Savory\TheSavory.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

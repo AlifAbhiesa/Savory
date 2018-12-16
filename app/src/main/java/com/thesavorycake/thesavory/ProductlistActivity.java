@@ -27,8 +27,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ProductlistActivity extends AppCompatActivity {
 GridView gridView;
-    String[] caketNames = {"Crusty Fruits","Matcha Blueberry","Red Velvet","NYC Cheesecake","Classic Chocochip","Cinnamon Rolls","Sweet Confetti","Raisin Bread","Tutti Fruity Macarons","Nuttela Meringue"};
+    String[] caketNames = {"Crusty Fruits","Matcha Blueberry","Red Velvet","NYC Cheesecake","Classic Chocochip","Cinnamon Rolls","Sweet Confetti","Raisin Bread","Tutti Fruity Macaron","Nuttela Meringue"};
     int[] cakeImages = {R.drawable.cake1,R.drawable.cake2,R.drawable.cake6,R.drawable.cake7,R.drawable.cake3,R.drawable.cake4,R.drawable.cake8,R.drawable.cake9,R.drawable.cake11,R.drawable.cake13};
+    String[] caketHarga = {"310.000","350.000","330.000","290.000","20.000","27.000","11.000","25.000","11.000","10.000"};
 
     private ProductlistActivityAdapter adapter;
     private GridView mGridView;
@@ -50,6 +51,7 @@ GridView gridView;
                 Intent intent = new Intent(getApplicationContext(),GridItemActivity.class);
                 intent.putExtra("name",caketNames[i]);
                 intent.putExtra("image",cakeImages[i]);
+                intent.putExtra("harga",caketHarga[i]);
                 startActivity(intent);
             }
         });
@@ -96,9 +98,11 @@ GridView gridView;
 
             TextView name = view1.findViewById(R.id.titleproduk);
             ImageView image = view1.findViewById(R.id.images);
+            TextView harga = findViewById(R.id.hargaproduk);
 
             name.setText(caketNames[i]);
             image.setImageResource(cakeImages[i]);
+            harga.setText(caketHarga[i]);
             return view1;
 
         }

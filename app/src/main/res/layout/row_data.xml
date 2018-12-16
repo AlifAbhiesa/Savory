@@ -10,7 +10,7 @@
         android:background="#fff"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_height="170dp">
+        android:layout_height="200dp">
 
         <TextView
             android:id="@+id/titleproduk"
@@ -23,6 +23,35 @@
             android:textColor="@color/gold3"
             android:textSize="17sp"
             android:textStyle="normal|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="17dp"
+            android:text="Price : Rp. "
+            android:textSize="15sp"
+            android:textColor="@color/brownGold"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:id="@+id/hargaproduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="97dp"
+            android:text="290.000"
+            android:textSize="15sp"
+            android:textColor="@color/brownGold"
+            android:fontFamily="serif"/>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:visibility="visible"
+            android:layout_below="@+id/titleproduk"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gold3" />
 
         <ImageView
             android:id="@+id/images"

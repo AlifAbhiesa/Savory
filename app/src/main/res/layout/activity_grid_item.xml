@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background4"
     tools:context="com.thesavorycake.thesavory.GridItemActivity">
 
     <TextView
@@ -13,10 +13,39 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="105dp"
-        android:text="Apple"
-        android:textColor="@color/gold3"
+        android:text="Crusty Fruits"
+        android:textColor="@android:color/white"
         android:textSize="30dp"
         android:fontFamily="serif"/>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/griddata"
+        android:visibility="visible"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="100dp"
+        android:text="Price : Rp. "
+        android:textSize="22sp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/gridharga"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="420dp"
+        android:text="290.000"
+        android:textSize="22sp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"/>
 
     <ImageView
         android:id="@+id/imageView"

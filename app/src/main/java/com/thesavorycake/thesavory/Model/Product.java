@@ -8,16 +8,16 @@ public class Product {
 
 
     private int id_produk;
-    private String nama;
+    private String nama_produk;
     private int harga;
-    private String keterangan;
+    private String ket;
     private String image;
 
-    public Product(int id_produk, String nama, int harga, String keterangan, String image) {
+    public Product(int id_produk, String nama_produk, int harga, String ket, String image) {
             this.id_produk = id_produk;
-            this.nama = nama;
+            this.nama_produk = nama_produk;
             this.harga = harga;
-            this.keterangan = keterangan;
+            this.ket = ket;
             this.image = image;
     }
 
@@ -29,12 +29,12 @@ public class Product {
         this.id_produk = id_produk;
     }
 
-    public String getNama() {
-        return nama;
+    public String getNama_produk() {
+        return nama_produk;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setNama_produk(String nama_produk) {
+        this.nama_produk = nama_produk;
     }
 
     public int getHarga() {
@@ -45,12 +45,12 @@ public class Product {
         this.harga = harga;
     }
 
-    public String getKeterangan() {
-        return keterangan;
+    public String getKet() {
+        return ket;
     }
 
-    public void setKeterangan(String keterangan) {
-        this.keterangan = keterangan;
+    public void setKet(String ket) {
+        this.ket = ket;
     }
 
     public String getImage() {

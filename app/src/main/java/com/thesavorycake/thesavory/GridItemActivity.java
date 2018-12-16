@@ -22,6 +22,6 @@ public class GridItemActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         name.setText(intent.getStringExtra("name"));
-        image.setImageResource(intent.getIntExtra("image"));
+        //image.setImageResource(intent.getIntExtra("image"));
     }
 }

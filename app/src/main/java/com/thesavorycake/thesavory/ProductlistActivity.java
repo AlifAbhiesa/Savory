@@ -9,8 +9,19 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.thesavorycake.thesavory.Adapter.ProductlistActivityAdapter;
+import com.thesavorycake.thesavory.Api.ProductAPI;
+import com.thesavorycake.thesavory.Model.Product;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -18,6 +29,10 @@ public class ProductlistActivity extends AppCompatActivity {
 GridView gridView;
     String[] caketNames = {"Crusty Fruits","Matcha Blueberry","Red Velvet","NYC Cheesecake","Classic Chocochip","Cinnamon Rolls","Sweet Confetti","Raisin Bread","Tutti Fruity Macarons","Nuttela Meringue"};
     int[] cakeImages = {R.drawable.cake1,R.drawable.cake2,R.drawable.cake6,R.drawable.cake7,R.drawable.cake3,R.drawable.cake4,R.drawable.cake8,R.drawable.cake9,R.drawable.cake11,R.drawable.cake13};
+
+    private ProductlistActivityAdapter adapter;
+    private GridView mGridView;
+    ProgressBar myProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +53,25 @@ GridView gridView;
                 startActivity(intent);
             }
         });
+
+//        ProductAPI myAPIService = RetrofitClientInstance.getRetrofitInstance().create(ProductAPI.class);
+//
+//        Call<List<Product>> call = myAPIService.getProduct();
+//        call.enqueue(new Callback<List<Product>>() {
+//
+//            @Override
+//            public void onResponse(Call<List<Product>> call, Response<List<Product>> response) {
+////                myProgressBar.setVisibility(View.GONE);
+//                populateGridView(response.body());
+//            }
+//            @Override
+//            public void onFailure(Call<List<Product>> call, Throwable throwable) {
+//               // myProgressBar.setVisibility(View.GONE);
+//                Toast.makeText(ProductlistActivity.this, throwable.getMessage(), Toast.LENGTH_LONG).show();
+//            }
+//        });
+
+
     }
 
     private class CustomAdapter extends BaseAdapter {
@@ -73,7 +107,7 @@ GridView gridView;
     static class RetrofitClientInstance {
 
         private static Retrofit retrofit;
-        private static final String BASE_URL = "https://192.168.100.19/";
+        private static final String BASE_URL = "http://192.168.100.19/android/";
 
         public static Retrofit getRetrofitInstance() {
             if (retrofit == null) {
@@ -84,5 +118,11 @@ GridView gridView;
             }
             return retrofit;
         }
+    }
+
+    private void populateGridView(List<Product> spacecraftList) {
+        mGridView = findViewById(R.id.gridview);
+        adapter = new ProductlistActivityAdapter(this,spacecraftList);
+        mGridView.setAdapter(adapter);
     }
 }

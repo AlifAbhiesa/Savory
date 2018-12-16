@@ -58,7 +58,7 @@ public class ProductlistActivityAdapter extends BaseAdapter{
 
         final Product thisProducts = products.get(position);
 
-        nameTxt.setText(thisProducts.getNama());
+        nameTxt.setText(thisProducts.getNama_produk());
 
 
         if(thisProducts.getImage() != null && thisProducts.getImage().length()>0)
@@ -72,7 +72,7 @@ public class ProductlistActivityAdapter extends BaseAdapter{
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, thisProducts.getNama(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, thisProducts.getNama_produk(), Toast.LENGTH_SHORT).show();
             }
         });
         return view;

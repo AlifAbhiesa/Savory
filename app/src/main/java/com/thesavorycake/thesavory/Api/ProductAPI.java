@@ -13,6 +13,6 @@ import retrofit2.http.GET;
 
 public interface ProductAPI {
 
-    @GET("/Products")
+    @GET("Products")
     Call<List<Product>> getProduct();
 }

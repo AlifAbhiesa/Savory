@@ -5,11 +5,11 @@
     <color name="colorAccent">#FF4081</color>
     <color name="gold">#DAA520</color>
     <color name="gold2">#CCA737</color>
+    <color name="gold3">#D5A836</color>
 
-    <!----- dots inactive color ----->
+
     <color name="dot_dark_screen1">#5D5D5D</color>
 
-    <!----- dots active color ----->
     <color name="dot_light_screen1">#8B8B8B</color>
 
     <array name="array_dot_active">

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/gridviewdata"
+        android:layout_width="170dp"
+        android:background="#fff"
+        android:layout_height="170dp">
+
+        <TextView
+            android:id="@+id/titleproduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/images"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Crusty Fruits"
+            android:textColor="@color/gold3"
+            android:textSize="17sp"
+            android:textStyle="normal|italic" />
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="150dp"
+            android:layout_height="115dp"
+            android:src="@drawable/cake1"
+             />
+    </RelativeLayout>
+
+
+</RelativeLayout>

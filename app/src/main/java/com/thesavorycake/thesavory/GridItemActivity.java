@@ -20,7 +20,7 @@ public class GridItemActivity extends AppCompatActivity {
 
         name = findViewById(R.id.griddata);
         image = findViewById(R.id.imageView);
-        harga = findViewById(R.id.gridharga)
+        harga = findViewById(R.id.gridharga);
 
         Intent intent = getIntent();
         name.setText(intent.getStringExtra("name"));

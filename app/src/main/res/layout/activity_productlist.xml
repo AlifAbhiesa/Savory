@@ -11,7 +11,8 @@
         android:layout_width="140dp"
         android:layout_height="70dp"
         android:src="@drawable/logo3"
-        android:layout_marginLeft="240dp"/>
+        android:layout_marginLeft="250dp"
+        />
 
     <include layout="@layout/header"/>
 

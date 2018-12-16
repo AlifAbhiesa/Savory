@@ -82,9 +82,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void LoginSuccess(){
-
         finish();
-        Intent intent = new Intent(LoginActivity.this, Produk.class);
+        Intent intent = new Intent(LoginActivity.this, MainmenuActivity.class);
         startActivity(intent);
        // Toast.makeText(LoginActivity.this, "Pushed", Toast.LENGTH_SHORT).show();
     }

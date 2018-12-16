@@ -79,6 +79,7 @@ public class RegisterActivity extends AppCompatActivity {
                   progress.dismiss();
                   if (value.equals("200")) {
                       Toast.makeText(RegisterActivity.this, message, Toast.LENGTH_SHORT).show();
+                      finish();
                   } else {
                       Toast.makeText(RegisterActivity.this, message, Toast.LENGTH_SHORT).show();
                   }

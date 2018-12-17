@@ -7,6 +7,85 @@
     android:background="@android:color/black"
     tools:context="com.thesavorycake.thesavory.ContactUsActivity">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo3"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <include layout="@layout/header"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/call_center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Your questions and comments are important for us to improve our service more."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:text="Hotline"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="(021) 52137990"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="Email"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="marketing@thesavory.com"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        />
+
 
 
 </RelativeLayout>

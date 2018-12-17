@@ -31,7 +31,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="110dp"
         android:background="@drawable/border"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -52,7 +52,7 @@
         android:layout_marginLeft="187dp"
         android:layout_marginTop="110dp"
         android:background="@drawable/border"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -72,7 +72,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="180dp"
         android:background="@drawable/border"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -92,7 +92,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/border"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -113,7 +113,7 @@
         android:layout_marginTop="320dp"
         android:background="@drawable/border"
         android:inputType="textMultiLine"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -144,7 +144,7 @@
         android:background="@drawable/border"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="465dp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         />
 
     <TextView

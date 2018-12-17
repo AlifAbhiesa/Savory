@@ -104,7 +104,6 @@ GridView gridView;
             image.setImageResource(cakeImages[i]);
 //            harga.setText(caketHarga[i]);
             return view1;
-
         }
     }
 
@@ -124,9 +123,9 @@ GridView gridView;
         }
     }
 
-    private void populateGridView(List<Product> spacecraftList) {
+    private void populateGridView(List<Product> productList) {
         mGridView = findViewById(R.id.gridview);
-        adapter = new ProductlistActivityAdapter(this,spacecraftList);
+        adapter = new ProductlistActivityAdapter(this,productList);
         mGridView.setAdapter(adapter);
     }
 }

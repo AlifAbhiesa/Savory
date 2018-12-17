@@ -39,11 +39,16 @@ public class MainmenuActivity extends AppCompatActivity {
         Intent MainMenu = new Intent(MainmenuActivity.this, MainmenuActivity.class);
         startActivity(MainMenu);
     }
-
-
+    
     public void ProductlistActivity(MenuItem item) {
         finish();
         Intent ProductList = new Intent(MainmenuActivity.this, ProductlistActivity.class);
         startActivity(ProductList);
+    }
+
+    public void ContactActvity(MenuItem item) {
+        finish();
+        Intent ContactActiv = new Intent(MainmenuActivity.this, ContactUsActivity.class);
+        startActivity(ContactActiv);
     }
 }

@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="420dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="110dp"
         android:text="Price : Rp. "
         android:textSize="22sp"
         android:fontFamily="serif"
@@ -42,6 +42,7 @@
         android:layout_height="30dp"
         android:layout_marginLeft="220dp"
         android:layout_marginTop="420dp"
+        android:textStyle="bold"
         android:text="290.000"
         android:textSize="22sp"
         android:fontFamily="serif"
@@ -54,6 +55,17 @@
         android:src="@drawable/cake1"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/griddata"
-        android:layout_marginTop="27dp" />
+        android:layout_marginTop="27dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="465dp"
+        android:src="@drawable/cart"
+        android:layout_centerHorizontal="true"
+        />
+
+
 
 </RelativeLayout>

@@ -22,7 +22,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainmenuActivity" />
         <activity android:name=".ProductlistActivity" />
-        <activity android:name=".GridItemActivity"></activity>
+        <activity android:name=".GridItemActivity" />
+        <activity android:name=".ContactUsActivity"></activity>
     </application>
 
 </manifest>

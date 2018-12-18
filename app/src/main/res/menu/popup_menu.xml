@@ -9,8 +9,13 @@
     <item
         android:id="@+id/menu"
         android:title="MENU"
-        android:onClick="ProductlistActivity"
+        android:onClick="ProductlistActivity"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="CART"
         />
+
     <item
         android:id="@+id/myacc"
         android:title="MY ACCOUNT"
@@ -21,8 +26,8 @@
         android:onClick="ContactActvity"
         />
     <item
-        android:id="@+id/help"
-        android:title="HELP"
+        android:id="@+id/logout"
+        android:title="LOGOUT"
         />
 
 </menu>

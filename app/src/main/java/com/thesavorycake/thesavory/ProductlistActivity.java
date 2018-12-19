@@ -3,6 +3,7 @@ package com.thesavorycake.thesavory;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -29,7 +30,7 @@ public class ProductlistActivity extends AppCompatActivity {
 GridView gridView;
     String[] caketNames = {"Crusty Fruits","Matcha Blueberry","Red Velvet","NYC Cheesecake","Classic Chocochip","Cinnamon Rolls","Sweet Confetti","Raisin Bread","Tutti Fruity Macaron","Nuttela Meringue"};
     int[] cakeImages = {R.drawable.cake1,R.drawable.cake2,R.drawable.cake6,R.drawable.cake7,R.drawable.cake3,R.drawable.cake4,R.drawable.cake8,R.drawable.cake9,R.drawable.cake11,R.drawable.cake13};
-    String[] caketHarga = {"310.000","350.000","330.000","290.000","20.000","27.000","11.000","25.000","11.000","10.000","10.000"};
+    int[] caketHarga = {310000,350000,330000,290000,20000,27000,11000,25000,11000,10000};
 
     private ProductlistActivityAdapter adapter;
     private GridView mGridView;
@@ -102,7 +103,8 @@ GridView gridView;
 
             name.setText(caketNames[i]);
             image.setImageResource(cakeImages[i]);
-//            harga.setText(caketHarga[i]);
+            harga.setText(caketHarga[i]);
+//            Log.d("Harga ", caketHarga[i].toString());
             return view1;
         }
     }

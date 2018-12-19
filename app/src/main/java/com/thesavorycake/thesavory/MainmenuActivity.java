@@ -39,7 +39,7 @@ public class MainmenuActivity extends AppCompatActivity {
         Intent MainMenu = new Intent(MainmenuActivity.this, MainmenuActivity.class);
         startActivity(MainMenu);
     }
-    
+
     public void ProductlistActivity(MenuItem item) {
         finish();
         Intent ProductList = new Intent(MainmenuActivity.this, ProductlistActivity.class);

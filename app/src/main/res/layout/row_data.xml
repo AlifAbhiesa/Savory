@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="170dp"
             android:layout_marginLeft="97dp"
-            android:text="290.000"
+
             android:textSize="15sp"
             android:textColor="@color/brownGold"
             android:fontFamily="serif"/>

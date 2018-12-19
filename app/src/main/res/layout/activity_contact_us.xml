@@ -100,7 +100,7 @@
              android:layout_width="97dp"
              android:layout_height="30dp"
              android:layout_marginTop="280dp"
-             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
              android:text="Your Name"
              android:textSize="17sp"
              android:textColor="@color/gold2"
@@ -109,9 +109,9 @@
 
          <EditText
              android:id="@+id/nama_contact"
-             android:layout_width="200dp"
+             android:layout_width="350dp"
              android:layout_height="35dp"
-             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
              android:layout_marginTop="310dp"
              android:background="@drawable/border"
              android:textColor="@android:color/white"
@@ -121,7 +121,7 @@
              android:layout_width="55dp"
              android:layout_height="30dp"
              android:layout_marginTop="360dp"
-             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
              android:text="Email"
              android:textSize="17sp"
              android:textColor="@color/gold2"
@@ -130,9 +130,9 @@
 
          <EditText
              android:id="@+id/email_contact"
-             android:layout_width="200dp"
+             android:layout_width="350dp"
              android:layout_height="35dp"
-             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
              android:layout_marginTop="390dp"
              android:background="@drawable/border"
              android:textColor="@android:color/white"
@@ -142,7 +142,7 @@
              android:layout_width="67dp"
              android:layout_height="30dp"
              android:layout_marginTop="440dp"
-             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
              android:text="Subject"
              android:textSize="17sp"
              android:textColor="@color/gold2"
@@ -151,7 +151,7 @@
 
          <EditText
              android:id="@+id/subject"
-             android:layout_width="200dp"
+             android:layout_width="350dp"
              android:layout_height="35dp"
              android:layout_centerHorizontal="true"
              android:layout_marginTop="470dp"
@@ -163,7 +163,7 @@
              android:layout_width="70dp"
              android:layout_height="30dp"
              android:layout_marginTop="520dp"
-             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
              android:text="Message"
              android:textSize="17sp"
              android:textColor="@color/gold2"
@@ -172,7 +172,7 @@
 
          <EditText
              android:id="@+id/message"
-             android:layout_width="250dp"
+             android:layout_width="350dp"
              android:layout_height="70dp"
              android:layout_centerHorizontal="true"
              android:layout_marginTop="550dp"
@@ -184,8 +184,8 @@
          <Button
              android:layout_width="100dp"
              android:layout_height="40dp"
-             android:layout_marginLeft="250dp"
-             android:layout_marginTop="630dp"
+             android:layout_marginLeft="280dp"
+             android:layout_marginTop="640dp"
              android:text="SEND"
              android:textColor="@android:color/white"
              android:fontFamily="serif"
@@ -195,8 +195,3 @@
      </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
-
-
-
-
-
